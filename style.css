@@ -4,20 +4,17 @@
 	padding: 0;
 	color: black;
 }
-body{
-	padding: 50px 100px;
-	position: relative;
-}
+
 header{
 	position: fixed;
 	width: 100%;
 	top: 0;
 	left: 0;
 	box-sizing: border-box;
-	padding: 50px 100px;
 	background: white;
 	border-bottom: 2px solid #acacac;
-	z-index: 10;
+	z-index: 100;
+	padding: 50px 100px 0 100px;
 }
 
 .header{
@@ -29,6 +26,10 @@ header{
 .logotip h3{
 	font-weight: normal;
 	font-size: 36px;
+}
+
+.logotip h1{
+	font-size: 57px;
 }
 
 .menu{
@@ -63,7 +64,7 @@ a{
 }
 
 .line{
-	height: 150px;
+	height: 160px;
 }
 
 .two{
@@ -76,45 +77,88 @@ a{
 }
 
 #indent{
-	padding: 85px 0 210px 0;
+	padding: 85px 100px 50px 100px;
 }
 
 .bodya{
 	background: url(../img/yolsndi4.jpg);
-	border: 2px solid #acacac;
-	height: 360px;
-	width: 335px;
+	height: 240px;
+	width: 255px;
 	background-size: cover;
 	background-position: center; 
 	background-repeat: no-repeat;
-	margin: 0 20px 25px 0;
+	margin: 0 20px 15px 0;
 	float: left;
 }
 
+.bodya2{
+	background: url(../img/yolsndi4.jpg);
+	height: 150px;
+	width: 180px;
+	background-size: cover;
+	background-position: center; 
+	background-repeat: no-repeat;
+	margin: 30px 0 19px 25px;
+	float: right;
+}
+
 .biography h3{
-	margin: 0 0 38px 17px;
+	margin: 0 0 15px 0;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.biography2 h3{
+	margin: 30px 0 15px 0;
 	font-size: 30px;
 	font-weight: bold;
 }
 
 .random_text{
 	font-size: 16px;
-	font-weight: bold;
+}
+
+.random_text2{
+	font-size: 16px;
 }
 
 .random_text p{
 	margin-top: 25px;
 }
 
+.velik{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.melik{
+	box-shadow: 3px 5px 35px 0px #000000;
+	margin-right: 80px;
+	padding: 20px;
+}
+
+.melik2{
+	box-shadow: 3px 5px 35px 0px #000000;
+	padding: 20px;
+}
+
 footer{
+	padding: 50px 0 50px 0;
+	background-color: #e1e1e1;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+footer p{
 	text-align: center;
 	font-size: 30px;
-	margin-top: 100px;
 }
 
 .biog{
 	height: 610px;
-	position: relative;
+	margin: 40px 0 50px 0;
+	width: 100%;
 }
 
 .ykaz{
@@ -128,6 +172,10 @@ footer{
 	left: 30%;
 }
 
+.ykaz:hover{
+	z-index: 10;
+}
+
 .sredniu{
 	height: 325px;
 	width: 325px;
@@ -137,7 +185,11 @@ footer{
 	justify-content: flex-end;
 	position: absolute;
 	left: 50%;
-	top: 30px;
+	margin-top: 30px;
+}
+
+.sredniu:hover{
+	z-index: 10;
 }
 
 .bezimanuy{
@@ -149,7 +201,11 @@ footer{
 	justify-content: flex-end;
 	position: absolute;
 	left: 29%;
-	top: 250px;
+	margin-top: 250px;
+}
+
+.bezimanuy:hover{
+	z-index: 10;
 }
 
 .mezinec{
@@ -160,7 +216,7 @@ footer{
 	align-items: flex-end;
 	justify-content: flex-end;
 	position: absolute;
-	top: 280px;
+	margin-top: 280px;
 	left: 49%;
 }
 
@@ -170,4 +226,141 @@ footer{
 	border-radius: 50%;
 	background-color: #2c3e50;
 	margin: 0 35px 25px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1500px){
+  .container {
+	width: 100%;
+  }
+}
+
+@media (min-width: 1200px)  and (max-width: 1500px)  {
+  .container {
+	width: 100%;
+  }
+
+}
+
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container {
+	width: 100%;
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1100px) {
+  .container {
+	width: 100%;
+  }
+	header{
+		padding: 40px 70px 0 70px;
+	}
+	ul{
+		font-size: 14px;
+	}
+	.logotip h3{
+		font-size: 22px;
+	}
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+	width: 100%;
+  }
+	header{
+		padding: 40px 50px 0 50px;
+	}
+	ul{
+		font-size: 14px;
+	}
+	.logotip h3{
+		font-size: 22px;
+	}
+	.logotip h1{
+		font-size: 35px;
+	}
+	.velik{
+		display: block;
+	}
+	.melik{
+		margin: 0 0 20px 0;
+	}
+	.biog{
+		transform: scale(0.8);
+	}
+}
+
+@media (min-width: 540px) and (max-width: 768px) {
+  .container {
+	width: 100%;
+  }
+	header{
+		padding: 30px 20px 0 20px;
+	}
+	ul{
+		font-size: 14px;
+	}
+	.logotip h3{
+		font-size: 20px;
+	}
+	.logotip h1{
+		font-size: 32px;
+	}
+	.velik{
+		flex-direction: column;
+		justify-content: center;
+	}
+	.melik{
+		margin: 0 0 20px 0;
+	}
+	.biog{
+		transform: scale(0.6);
+	}
+}
+
+@media (max-width: 540px) {
+  .container {
+	width: 100%;
+  }
+	header{
+		padding: 30px 20px 0 20px;
+	}
+	ul{
+		font-size: 10px;
+	}
+	.logotip h3{
+		font-size: 14px;
+	}
+	.logotip h1{
+		font-size: 22px;
+	}
+	.velik{
+		flex-direction: column;
+		justify-content: center;
+	}
+	.melik{
+		margin: 0 0 20px 0;
+	}
+	.biog{
+		transform: scale(0.6);
+	}
+	#indent{
+	padding: 20px;
+	}
+	.contakt{
+	font-size: 14px;
+	margin-top: 15px;
+}
 }
